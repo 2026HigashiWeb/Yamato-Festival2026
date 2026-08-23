@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山東祭2026｜E。-ast-</title>
+    
+    <meta name="description" content="山東祭2026の公式ウェブサイトへようこそ！開催日時、イベントスケジュール、模擬店や展示の情報をリアルタイムで更新中。宇宙をテーマにした今年の文化祭をお見逃しなく！">
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Google Fonts (Async Loading) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@900&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@900&display=swap" media="print" onload="this.media='all'">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="starry-sky"></canvas>
+    <div id="preloader"><div class="loader-text font-playfair">E . - a s t -</div></div>
+    
+    <div id="lang-switcher-container">
+        <button id="lang-switcher-btn">
+            <!-- Globe Icon SVG -->
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/><path d="M12 4c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zm0 10c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z"/><path d="M12 7c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zm0 4c-.551 0-1-.449-1-1s.449-1 1-1 1 .449 1 1-.449 1-1 1z"/></svg>
+            <span id="lang-switcher-text">English</span>
+        </button>
+    </div>
+
+    <div id="mapModal" class="modal">
+        <span class="modal-close" id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImage" src="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://placehold.co/1200x800/1a1a3b/d1bfff?text=Map+Error';">
+    </div>
+
+    <header>
+        <div>
+            <h1 class="font-playfair galaxy-text" data-lang-key="heroTitle">山東祭2026<br>E-AST-</h1>
+            <p class="font-playfair" data-lang-key="heroSubtitle">スローガン：『東東拍子』</p>
+        </div>
+        <a href="#info" class="scroll-down-arrow"><!-- Chevron Down Icon SVG --><svg class="icon" viewBox="0 0 24 24"><path d="m11.998 17 7-7-1.414-1.414L12 14.172 6.414 8.586 5 10l7 7z"/></svg></a>
+    </header>
+
+    <main>
+        <section id="info" class="fade-in-section">
+            <h2 class="font-playfair section-title" data-lang-key="infoTitle">Information</h2>
+            <div class="grid md-grid-cols-2">
+                <div class="info-card floating-card" style="background-image: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=800&auto=format&fit=crop&fm=webp');">
+                    <h3 class="font-playfair" data-lang-key="infoDateTitle">日程</h3>
+                    <p data-lang-key="infoDate1">8月29日 (土)</p>
+                    <p data-lang-key="infoDate2">8月30日 (日)</p>
+                </div>
+                <div class="info-card floating-card" style="background-image: url('https://images.unsplash.com/photo-1506443432602-ac2fcd6f54e0?q=80&w=800&auto=format&fit=crop&fm=webp');">
+                    <h3 class="font-playfair" data-lang-key="infoTimeTitle">一般公開 時間</h3>
+                    <p data-lang-key="infoTime1">8/29 (土) 10:30 〜 15:00</p>
+                    <p data-lang-key="infoTime2">8/30 (日) 10:00 〜 14:00</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule" class="fade-in-section">
+            <h2 class="font-playfair section-title" data-lang-key="scheduleTitle">Schedule</h2>
+            <div>
+                <div class="tab-buttons" id="date-tabs">
+                    <button data-date-target="day1" class="tab-active" data-lang-key="scheduleDate1">8月29日(土)</button>
+                    <button data-date-target="day2" data-lang-key="scheduleDate2">8月30日(日)</button>
+                </div>
+                <div id="schedule-content-container">
+                    <div id="day1" class="date-content">
+                        <h3 class="font-playfair date-title" data-lang-key="scheduleDay1Title">8/29 (Sat)</h3>
+                        <div class="grid md-grid-cols-2">
+                            <div class="schedule-card">
+                                <h4 class="font-playfair venue-title" data-lang-key="scheduleVenueGym">体育館</h4>
+                                <div class="schedule-list">
+                                    <div class="schedule-item"><time>10:30~10:35</time><div data-lang-key="eventD1G1">オープニング</div></div>
+                                    <div class="schedule-item"><time>10:35~11:00</time><div data-lang-key="eventD1G2">H-1 Aブロック</div></div>
+                                    <div class="schedule-item"><time>11:00~11:25</time><div data-lang-key="eventD1G3">H-1 Bブロック</div></div>
+                                    <div class="schedule-item"><time>11:25~12:10</time><div data-lang-key="eventD1G4">一年生ダンス</div></div>
+                                    <div class="schedule-item"><time>12:10~12:35</time><div data-lang-key="eventD1G5">書道パフォーマンス</div></div>
+                                    <div class="schedule-item"><time>12:35~13:05</time><div data-lang-key="eventD1G6">歌うま Aブロック</div></div>
+                                    <div class="schedule-item"><time>13:05~13:35</time><div data-lang-key="eventD1G7">歌うま Bブロック</div></div>
+                                    <div class="schedule-item"><time>13:35~14:00</time><div data-lang-key="eventD1G8">H1 Cブロック</div></div>
+                                    <div class="schedule-item"><time>14:00~14:30</time><div data-lang-key="eventD1G8">歌うま Cブロック</div></div>
+                                </div>
+                            </div>
+                            <div class="schedule-card">
+                                <h4 class="font-playfair venue-title" data-lang-key="scheduleVenueHall">講堂</h4>
+                                <div class="schedule-list">
+                                    <div class="schedule-item"><time>10:30~11:30</time><div data-lang-key="eventD2A1">スマブラ大会</div></div>
+                                    <div class="schedule-item"><time>12:00~14:30</time><div data-lang-key="eventD2A2">バンド</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="day2" class="date-content hidden">
+                        <h3 class="font-playfair date-title" data-lang-key="scheduleDay2Title">8/30 (Sun)</h3>
+                        <div class="grid md-grid-cols-2">
+                            <div class="schedule-card">
+                                <h4 class="font-playfair venue-title" data-lang-key="scheduleVenueGym">体育館</h4>
+                                <div class="schedule-list">
+                                    <div class="schedule-item"><time>10:10~10:35</time><div data-lang-key="eventD2G1">H-1 Dブロック</div></div>
+                                    <div class="schedule-item"><time>10:35~11:05</time><div data-lang-key="eventD2G2">歌うま Dブロック</div></div>
+                                    <div class="schedule-item"><time>11:05~11:50</time><div data-lang-key="eventD2G3">一年生ダンス</div></div>
+                                    <div class="schedule-item"><time>11:50~12:20</time><div data-lang-key="eventD2G4">歌うま 準決勝</div></div>
+                                    <div class="schedule-item"><time>12:20~12:45</time><div data-lang-key="eventD2G5">H-1 決勝</div></div>
+                                    <div class="schedule-item"><time>12:45~13:00</time><div data-lang-key="eventD2G6">有志ダンス</div></div>
+                                    <div class="schedule-item"><time>13:00~13:35</time><div data-lang-key="eventD2G6">チアパフォーマンス</div></div>
+                                    <div class="schedule-item"><time>13:35~13:40</time><div data-lang-key="eventD2G6">エンディング</div></div>
+                                </div>
+                            </div>
+                            <div class="schedule-card">
+                                <h4 class="font-playfair venue-title" data-lang-key="scheduleVenueHall">講堂</h4>
+                                <div class="schedule-list">
+                                    <div class="schedule-item"><time>10:05~10:25</time><div data-lang-key="eventD2A1">放送部企画</div></div>
+                                    <div class="schedule-item"><time>11:35~14:00</time><div data-lang-key="eventD2A2">バンド</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="booths" class="fade-in-section">
+            <h2 class="font-playfair section-title" data-lang-key="boothsTitle">Booths & Exhibits</h2>
+            <div id="filters">
+                <button class="filter-active" data-filter="all" data-lang-key="filterAll">すべて</button>
+                <button data-filter="class" data-lang-key="filterClass">クラス</button>
+                <button data-filter="club" data-lang-key="filterClub">部活・委員会</button>
+            </div>
+            <div id="booth-grid" class="grid grid-cols-1 md-grid-cols-2 lg-grid-cols-3"></div>
+            <div class="cta-container">
+                <a href="https://drive.google.com/drive/folders/1g72cGElfsPMMzFcXUasVw_DdJJnD_Eql" target="_blank" rel="noopener noreferrer" class="cta-button">
+                    <!-- Search Icon SVG --><svg class="icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                    <span data-lang-key="researchPostersButton">本校2年生の探究ポスターはこちら</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="crowd-status" class="fade-in-section">
+            <h2 class="font-playfair section-title" data-lang-key="crowdTitle">リアルタイム混雑状況</h2>
+            <div id="crowd-status-grid" class="grid grid-cols-1 md-grid-cols-2 lg-grid-cols-3">
+                <p class="loading-text" data-lang-key="crowdLoading">混雑状況を読み込んでいます...</p>
+            </div>
+        </section>
+
+        <section id="map" class="fade-in-section">
+            <h2 class="font-playfair section-title" data-lang-key="mapTitle">School Map</h2>
+            <div class="map-container">
+                <div class="tab-buttons" id="map-tabs">
+                    <button class="tab-active" data-map-target="map-1f" data-lang-key="mapTab1F">1F</button>
+                    <button data-map-target="map-2f" data-lang-key="mapTab2F">2F</button>
+                    <button data-map-target="map-3f" data-lang-key="mapTab3F">3F</button>
+                    <button data-map-target="map-gym" data-lang-key="mapTabGym">体育館</button>
+                </div>
+                <div id="map-images">
+                    <img id="map-1f" class="map-image" src="山東祭校内マップ1F.svg" alt="1階 校内マップ" width="1000" height="600" onerror="this.onerror=null;this.src='https://placehold.co/1000x600/1a1a3b/d1bfff?text=Map+1F+Error';">
+                    <img id="map-2f" class="map-image hidden" src="山東祭校内マップ2F.svg" alt="2階 校内マップ" width="1000" height="600" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://placehold.co/1000x600/1a1a3b/d1bfff?text=Map+2F+Error';">
+                    <img id="map-3f" class="map-image hidden" src="山東祭校内マップ3F.svg" alt="3階 校内マップ" width="1000" height="600" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://placehold.co/1000x600/1a1a3b/d1bfff?text=Map+3F+Error';">
+                    <img id="map-gym" class="map-image hidden" src="山東祭校内マップ体育館.svg" alt="体育館マップ" width="1000" height="600" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://placehold.co/1000x600/1a1a3b/d1bfff?text=Map+Gym+Error';">
+                </div>
+                <p class="map-desc" data-lang-key="mapDesc">マップをクリックまたはタップで拡大表示します。</p>
+            </div>
+        </section>
+
+        <section id="access" class="fade-in-section">
+            <h2 class="font-playfair section-title" data-lang-key="accessTitle">Access</h2>
+            <div class="grid lg-grid-cols-2">
+                <div class="info-card">
+                    <h3 class="font-playfair" data-lang-key="accessSchoolName">山形県立山形東高等学校</h3>
+                    <p class="access-info-item"><!-- Map Pin Icon SVG --><svg class="icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> <span><strong data-lang-key="accessAddressTitle">住所:</strong> <span data-lang-key="accessAddress">〒990-0044 山形県山形市緑町1-5-59</span></span></p>
+                    <p class="access-info-item"><!-- Phone Icon SVG --><svg class="icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg> <span><strong data-lang-key="accessPhoneTitle">電話:</strong> 023-622-3010</span></p>
+                </div>
+                <div class="info-card gmap-card">
+                    <!-- Map Directions Icon SVG --><svg class="icon" viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.39.39-1.02 0-1.41zM12 21.5L3.5 13H6v-2h2v2h3.5L12 21.5zM12 11.5L6.5 6H9V4h2v2h3.5L12 11.5z"/></svg>
+                    <h3 class="font-playfair" data-lang-key="accessGmapTitle">地図で場所を確認</h3>
+                    <a href="https://www.google.com/maps/place/%E5%B1%B1%E5%BD%A2%E7%9C%8C%E7%AB%8B%E5%B1%B1%E5%BD%A2%E6%9D%B1%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1" target="_blank" rel="noopener noreferrer" class="cta-button" data-lang-key="accessGmapButton">
+                        Googleマップで開く
+                    </a>
+               </div>
+            </div>
+        </section>
+
+        <section class="fade-in-section cta-container">
+             <a href="https://www.instagram.com/yamatosai_2025" target="_blank" rel="noopener noreferrer" class="cta-button">
+                <!-- Instagram Icon SVG --><svg class="icon" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+                <span data-lang-key="instagramButton">山東祭 公式Instagramへ</span>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-stars"></div>
+        <p data-lang-key="footerText">© 2025 山形東高校 山東祭実行委員会</p>
+    </footer>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
+
