@@ -1,1 +1,0 @@
-# Yamato-Festival2026
