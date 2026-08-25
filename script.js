@@ -158,13 +158,13 @@ document.addEventListener('DOMContentLoaded', function() {
             import { getFirestore, collection, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
             const firebaseConfig = {
-                 apiKey: "AIzaSyBUclBluehOXOZXlDCeePcdVKmYdKkRxFI",
-                 authDomain: "yamatosai2025-4f10b.firebaseapp.com",
-                 projectId: "yamatosai2025-4f10b",
-                 storageBucket: "yamatosai2025-4f10b.firebasestorage.app",
-                 messagingSenderId: "817983089763",
-                 appId: "1:817983089763:web:8ca71d1ff70812f2645c56",
-                 measurementId: "G-H7VH1ZJYE9"
+                 apiKey: "AIzaSyALh0WOPimnZR2e7HxdSqVIhfdZiNKtyt8",
+                 authDomain: "yamato-festival2026.firebaseapp.com",
+                 projectId: "yamato-festival2026",
+                 storageBucket: "yamato-festival2026.firebasestorage.app",
+                 messagingSenderId: "157211375418",
+                 appId: "1:157211375418:web:152cefca2e2ffbb5450203",
+                 measurementId: "G-T2CQ2ELRVW"
             };
 
             try {
