@@ -218,7 +218,7 @@ main section { margin-bottom: 6rem; }
     border-radius: 9999px;
     border: 1px solid var(--border-color);
     background-color: rgba(255,255,255,0.1);
-    color: var(--text-color);
+    color: var(--text-);
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -255,12 +255,12 @@ main section { margin-bottom: 6rem; }
 .booth-card h3 {
     font-size: 1.25rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #a9a9a9;
 }
 .booth-card p {
     font-size: 0.875rem;
     margin-top: 0.25rem;
-    color: #9a9a9a !important ;
+    color: #ffffff ;
 }
 .booth-details {
     display: none;
