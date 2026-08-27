@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateMapImages() {
-        const suffix = currentLang === 'en' ? '-En.svg' : '.svg';
+        const suffix = currentLang === 'en' ? '-En.png' : '.png';
         document.getElementById('map-1f').src = '山東祭校内マップ1F' + suffix;
         document.getElementById('map-2f').src = '山東祭校内マップ2F' + suffix;
         document.getElementById('map-3f').src = '山東祭校内マップ3F' + suffix;
