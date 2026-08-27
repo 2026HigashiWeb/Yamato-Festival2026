@@ -311,7 +311,6 @@ document.addEventListener('DOMContentLoaded', function() {
     createAndDisplayBooths();
 
     window.addEventListener('load', function() {
-        setupStarrySky();
         const preloader = document.getElementById('preloader');
         if (preloader) {
             preloader.style.opacity = '0';
