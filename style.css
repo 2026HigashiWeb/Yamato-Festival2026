@@ -1,7 +1,7 @@
 /* --- 基本スタイル & アニメーション --- */
 :root {
     --bg-color: #1a1a3b;
-    --text-color: #9a9a9a;
+    --text-color: #6f6f6f;
     --accent-color: #5066C8;
     --card-bg: rgba(255, 255, 255, 0.5);
     --border-color: rgba(255, 255, 255, 0.1);
@@ -260,7 +260,7 @@ main section { margin-bottom: 6rem; }
 .booth-card p {
     font-size: 0.875rem;
     margin-top: 0.25rem;
-    color: #9a9a9a;
+    color: #9a9a9a !important ;
 }
 .booth-details {
     display: none;
