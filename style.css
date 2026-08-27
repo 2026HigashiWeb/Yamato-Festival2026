@@ -9,12 +9,17 @@
 
 body {
     background-color: var(--bg-color);
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
     color: var(--text-color);
     font-family: 'Noto Sans JP', 'Inter', sans-serif;
     overflow-x: hidden;
     margin: 0;
 }
-
 .font-playfair { font-family: 'Playfair Display', 'Arial', serif; }
 
 @keyframes gradient-animation {
