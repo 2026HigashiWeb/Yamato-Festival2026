@@ -47,7 +47,7 @@ body {
 header { height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; position: relative; padding: 1rem; }
 header h1 { font-size: 3rem; font-weight: 900; margin-bottom: 1rem; line-height: 1.2; }
 header p { font-size: 1.125rem; color: #d1d5db; }
-.galaxy-text { background: linear-gradient(45deg, #d1bfff, #a29bfe, #74b9ff, #d1bfff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent; animation: gradient-animation 5s ease infinite; background-size: 200% 200%; color: fead3b;}
+.galaxy-text { background: linear-gradient(45deg, #d1bfff, #a29bfe, #74b9ff, #d1bfff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent; animation: gradient-animation 5s ease infinite; background-size: 200% 200%; color: #fead3b;}
 .scroll-down-arrow { position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%); animation: bounce 2s infinite; color: var(--accent-color); font-size: 1.875rem; text-decoration: none; }
 #lang-switcher-container { position: fixed; top: 1.25rem; right: 1.25rem; z-index: 50; }
 #lang-switcher-btn { padding: 0.5rem 1rem; color: white; background-color: var(--card-bg); backdrop-filter: blur(5px); border: 1px solid var(--border-color); border-radius: 9999px; transition: all 0.3s; cursor: pointer; display: flex; align-items: center; gap: 0.5rem; }
