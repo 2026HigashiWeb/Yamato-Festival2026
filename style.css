@@ -1,7 +1,7 @@
 /* --- 基本スタイル & アニメーション --- */
 :root {
     --bg-color: #1a1a3b;
-    --text-color: #f0f0f0;
+    --text-color: #6f6f6f;
     --accent-color: #919ae2;
     --card-bg: rgba(0, 0, 0, 0.3);
     --border-color: rgba(255, 255, 255, 0.1);
