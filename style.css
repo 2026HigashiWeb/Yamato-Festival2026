@@ -266,7 +266,7 @@ main section { margin-bottom: 6rem; }
     display: none;
     padding: 1rem;
     border-top: 1px solid var(--border-color);
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(243,243,243,0.);
     color: #e0e0e0;
 }
 
