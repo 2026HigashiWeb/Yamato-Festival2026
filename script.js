@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 statusElement.className = 'status-item';
                 statusElement.innerHTML = `
                     <span class="status-indicator status-${statusData.status}"></span>
-                    <div><p style="font-weight: bold;">${name}</p><p style="font-size: 0.875rem; color: #9ca3af;">${statusText}</p></div>`;
+                    <div><p style="font-weight: bold;">${name}</p><p style="font-size: 0.875rem; color: #555555;">${statusText}</p></div>`;
                 grid.appendChild(statusElement);
             }
         });
