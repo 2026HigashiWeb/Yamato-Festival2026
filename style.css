@@ -359,7 +359,8 @@ footer { position: relative; padding: 5rem 1rem 2rem 1rem; margin-top: 4rem; tex
     top: -2%;
     left: -2%;
     z-index: -9999;
-    transform: scale(0.5);
+    width: 100px;
+    height: 100px;
 }
 
 .Fujin {
@@ -367,5 +368,6 @@ footer { position: relative; padding: 5rem 1rem 2rem 1rem; margin-top: 4rem; tex
     bottom: -2%;
     right: -2%;
     z-index: -9999;
-    transform: scale(0.5);
+    width: 100px;
+    height: 100px;
 }
