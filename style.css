@@ -255,12 +255,12 @@ main section { margin-bottom: 6rem; }
 .booth-card h3 {
     font-size: 1.25rem;
     font-weight: bold;
-    color: #a9a9a9;
+    color: #555555;
 }
 .booth-card p {
     font-size: 0.875rem;
     margin-top: 0.25rem;
-    color: #a9a9a9;
+    color: #555555;
 }
 .booth-details {
     display: none;
