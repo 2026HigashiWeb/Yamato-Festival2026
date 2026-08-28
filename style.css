@@ -316,7 +316,7 @@ main section { margin-bottom: 6rem; }
 .map-desc {
     text-align: center;
     margin-top: 1rem;
-    color: #9ca3af;
+    color: #555555;
 }
 
 .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9); align-items: center; justify-content: center; }
@@ -350,7 +350,7 @@ main section { margin-bottom: 6rem; }
     margin-bottom: 1rem;
 }
 
-footer { position: relative; padding: 5rem 1rem 2rem 1rem; margin-top: 4rem; text-align: center; color: #9ca3af; font-size: 0.875rem; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); }
+footer { position: relative; padding: 5rem 1rem 2rem 1rem; margin-top: 4rem; text-align: center; color: #555555; font-size: 0.875rem; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); }
 .footer-stars { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; }
 .star { position: absolute; background-color: white; border-radius: 50%; animation: twinkle 5s infinite ease-in-out; }
 
